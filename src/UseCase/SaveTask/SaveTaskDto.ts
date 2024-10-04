@@ -1,5 +1,8 @@
-export default class SaveTaskDto {
-  id: null | number;
+import { IsString } from 'class-validator';
 
-  name: string;
+export default class SaveTaskDto {
+
+    @IsString()
+    name: string;
+
 }
